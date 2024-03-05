@@ -9,13 +9,13 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class="logo">My Portfolio</div>
+        <div class="logo"> <img src="./assets/mylogo1.png" alt="DLD Logo"></div>
         <div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <!-- <li><a href="#skills__main__section">Skills</a></li> -->
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#skills__main__section">Skills</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contacts__main__section">Contacts</a></li>
             </ul>
         </div>
     </nav>
@@ -23,36 +23,54 @@
     <!-- This is my Profile Picture -->
     <section id="profile">
         <div class="section__pic-container">
-            <img class="section__pic" src="./assets/mypic3.png" alt="Dayson Delfin profile picture">
+            <img class="section__pic" src="./assets/mypic1.png" alt="Dayson Delfin profile picture">
         </div>
         <div class="section__text">
             <p class="section__text__p1">Hi, I'm</p>
             <h1 class="title">Dayson Delfin</h1>
-            <p class="section__text__p2"> Welcome to my Porfolio Website, where simplicity meets functionality. 
+            <p class="section__text__p2"> Welcome to my Portfolio Website, where simplicity meets functionality. 
                 <!-- My user-friendly website is designed to provide you with an effortless and intuitive experience. --></p>
 
             <div class="btn-container">
-                <!-- <button class="btn btn-color-2" onclick="window.open('./assets/skills.png')">
-                    View Skills
-                </button> -->
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV_Dayson L Delfin.pdf')">
+                    CV Download
+                </button>
 
-                <button class="btn btn-color-2" onclick="location.href='./#skills__main__section'">
-                  View Skills
-              </button>
+                <!-- <button class="btn btn-color-2" onclick="location.href='./#skills__main__section'">
+                  Download CV
+              </button> -->
 
                 <button class="btn btn-color-1" onclick="location.href='./#contacts'">
                     Contacts
                 </button>
             </div>
-            <!-- <div id="socials-container">
-                <img src="./assets/linkedinIcon.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/'"/>
+            <div id="socials-container">
+                <!-- <img src="./assets/linkedinIcon.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/dayson-delfin-893474212'"/> -->
 
-                <img src="./assets/githubIcon.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://github.com/DLDelfin/portfolio'"/>
-            </div> -->
+                <a class="linkedin" href="https://www.linkedin.com/in/dayson-delfin-893474212" target="_blank">
+                  <img src="./assets/linkedinIcon.png" alt="My LinkedIn Profile" class="icon" />
+                </a>
+
+                <!-- <img src="./assets/githubIcon.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://github.com/DLDelfin'"/> -->
+
+                <a class="github" href="https://github.com/DLDelfin" target="_blank">
+                  <img src="./assets/githubIcon.png" alt="My Github Projects" class="icon" />
+                </a>
+
+            </div>
         </div>
+
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="arrow_home"
+        onclick="location.href='./#skills__main__section' ">
+
       </section>
 <!-- SKILLS SECTION -->
       <section id="skills__main__section">
+
+        <p class="section__text__p1">Get To Know More About</p>
+        <h1 class="title">My Expertise</h1>
         <div class="skills__grid__container">
 
           <div class="skills__col__1">
@@ -79,7 +97,6 @@
                 </div>
             </div>
           </div>
-            
 
           <div class="skills__col__2">
             <div class="skills__col__title">Skills Description</div>
@@ -87,10 +104,75 @@
               <p>Mastering a diverse skill set in HTML, CSS, PHP, Java, and Python, I've embarked on a continuous journey of self-directed learning, leveraging online resources, hands-on projects, and real-world applications to develop a robust proficiency. Through practical experience, dedicated study, and a passion for coding, I've honed these skills, allowing me to create dynamic and innovative solutions in the ever-evolving landscape of web development and programming.</p>
             </div>
           </div>
-
         </div>
+        
+  
+          <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="arrow_skills"
+        onclick="location.href='./#about' ">
+      
+      
       </section>
+
 <!-- END OF SKILLS SECTION -->
+
+<section id="about">
+  <p class="section__text__p1">Get To Know More</p>
+  <h1 class="title">About Me</h1>
+  <div class="section__containerabout">
+
+    <div class="section__pic-containerlogo">
+      <img src="./assets/mylogo2.png" alt="DLD Logo" class="about-pic"/>
+    </div>
+
+    <div class="about-details-container">
+
+      <div class="about-containers">
+
+            <div class="details-container">
+              <img src="./assets/experiencebadge.png" alt="Experience Icon" class="icon">
+              <h3>Experiences</h3>
+              <p>11+ years <br> Customer Service Supervisor <br> The SM Store Clark</p>
+              <h3><br></h3>
+              <p>2 years <br> Officer-In-Charge / Chef Cook <br> Max's Ermita Inc.</p>
+            </div>
+
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education Icon" class="icon">
+              <h3>Education</h3>
+              <p>Holy Angel University<br>BS Information Technology / Web Development</p>
+
+              <h3><br></h3>
+              <p>Dominican College of Tarlac<br>Hotel and Restaurant Managment</p>
+            </div>
+        
+      </div>
+
+      <div class="text-container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam harum nihil consequuntur! Officia dolorum quas doloribus similique ducimus ipsa in perferendis voluptatum aut sint esse eveniet ipsam itaque libero debitis iusto nihil facere ad deleniti, quidem aliquid error. Nihil quo dolore nisi, distinctio odio illum soluta vel numquam quas.
+      </div>
+
+    </div>
+
+  </div>
+
+      <img src="./assets/arrow.png" 
+      alt="Arrow Icon" 
+      class="arrow_aboutme"
+      onclick="location.href='./#contacts__main__section' ">
+</section>
+
+<section id="contacts__main__section">
+  <div class="contacts_main_title">
+    <h1>Contacts</h1>
+  </div>
+  
+</section>
+
+<footer>
+  <h1>Footer</h1>
+</footer>
 
     <!-- <script src="script.js"></script> -->
 </body>
