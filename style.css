@@ -1,7 +1,5 @@
 /*General Style*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
-
-
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 *{
@@ -11,7 +9,8 @@
 }
 
 body {
-    font-family: 'Orbitron', sans-serif, 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    /* 'Orbitron', sans-serif,  */
     background-color: none;
 }
 
@@ -25,7 +24,7 @@ p {
 
 /* TRANSITION */
 a, .btn {
-    transition: all 300ms ease;
+    transition: all 350ms ease;
 }
 
 /* DESKTOP NAVIGATION */
@@ -36,15 +35,15 @@ nav {
     background-color: black;
     justify-content: space-around;
     align-items: center;
-    height: 13vh;
+    height: 15vh;
 }
 
 .nav-links {
-    font-family: 'Orbitron', sans-serif;
+    font-family: 'Montserrat','Orbitron', sans-serif;
     background-color: black;
     gap: 3rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 3vh;
 }
 
 a {
@@ -56,17 +55,19 @@ a {
 
 a:hover {
     color: grey;
-    /* text-decoration:underline; */
+    text-decoration:underline;
     text-underline-offset: 0.5rem;
     text-decoration-color: rgb(181,181,181);
     cursor: default;
 }
 
-.logo {
-    font-family: 'Orbitron', sans-serif;
+.logo, img {
+    /* font-family: 'Orbitron', sans-serif;
     background-color: black;
     color: white;
-    font-size: 2rem;
+    font-size: 2rem; */
+    height: 100px;
+    width: auto;
 }
 
 .logo:hover {
@@ -88,6 +89,7 @@ section {
 
 /* PROFILE SECTION */
 #profile {
+    position: relative;
     display: flex;
     justify-content: center;
     gap: 5rem;
@@ -96,9 +98,18 @@ section {
 
 .section__pic-container {
     display: flex;
-    height: 700px;
-    width: 700px;
+    height: 500px;
+    width: 500px;
     margin: auto 0;
+}
+
+.section__pic-container img{
+    height:auto;
+    width: auto;
+    border-radius: 50%;
+    padding: px;
+    border: 1px solid;
+    border-color: rgb(255, 255, 255);
 }
 
 .section__text {
@@ -107,7 +118,7 @@ section {
 }
 
 .section__text p {
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .section__text__p1 {
@@ -129,12 +140,13 @@ section {
     text-align: center;
 }
 
-#socials-container {
+#socials-container, .linkedin, .github {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 10px;
     gap: 1rem;
 }
+
 
 /* ICONS */
 .icon {
@@ -193,6 +205,7 @@ section {
 /* SKILLS SECTION */
 
 #skills__main__section {
+    position: relative;
     padding-top: 7vh;
     height: 96vh;
     margin: 0 10rem;
@@ -207,9 +220,11 @@ section {
 }
 
 .skills__grid__container {
+    position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
     text-align: center;
+    margin-top: 10vh;
 }
 
 /* Skills description */
@@ -223,6 +238,7 @@ section {
     text-align: justify;
     margin: 4rem 0 0 2rem;
 }
+
 
 /* Skills Bars */
 * {box-sizing: border-box}
@@ -251,3 +267,75 @@ section {
     margin-left: 5px;
 }
 
+.arrow_skills {
+    height: 2rem;
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+    
+}
+
+.arrow_home {
+    height: 2rem;
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-containers, .about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow_aboutme {
+    height: 2rem;
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background-origin:rgb(163, 163, 163);
+    text-align: center;
+}
+.section__containerabout {
+    gap: 4rem;
+    height: 80%;
+    display: flex;
+}
+
+.section__pic-containerlogo {
+    /* height: 400px;
+    width: 400px; */
+    margin: auto 0;
+}
+
+.about-pic {
+    height: 400px;
+    width: auto;
+}
