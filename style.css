@@ -43,7 +43,7 @@ nav {
     background-color: black;
     gap: 3rem;
     list-style: none;
-    font-size: 3vh;
+    font-size: 2vh;
 }
 
 a {
@@ -181,23 +181,24 @@ section {
     cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
+.btn-color-1 {
     background: black;
     color:white;
 }
 
-.btn-color-1:hover {
-    background: rgb(122, 115, 115);
+.btn-color-1:hover,
+.btn-color-2:hover {
+    background: white;
     color: black;
 }
 
 .btn-color-2 {
-    background: none;
+    background: black;
+    color: white;
 }
 
 .btn-color-2:hover {
-    border: rgb(255,255,255) 0.1rem solid;
+    border: black 0.1rem solid;
 }
 .btn-container {
     gap: 1rem;
@@ -346,3 +347,59 @@ section {
     height: 400px;
     width: auto;
 }
+
+/* CONTACT SECTION */
+
+#contacts__main__section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.email-icon {
+    height: 2.2rem;
+}
+
+.email-me-text{
+    background-color: white;
+    color: black;
+}
+
+/* FOOTER SECTION */
+footer {
+    height: 26vh;
+    /* margin: 0 1rem; */
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-bottom: 6rem;
+}
+
