@@ -68,6 +68,7 @@ a:hover {
     font-size: 2rem; */
     height: 100px;
     width: auto;
+    
 }
 
 .logo:hover {
@@ -236,6 +237,7 @@ section {
 .skills__description {
     font-size: 20px;
     text-align: justify;
+    font-weight: bold;
     margin: 4rem 0 0 2rem;
 }
 
@@ -301,6 +303,11 @@ section {
 
 .about-containers, .about-details-container {
     display: flex;
+}
+.aboutme-text-container {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .about-pic {
